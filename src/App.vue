@@ -28,7 +28,6 @@ export default {
 .container {
     display: flex;
     justify-content: center;
-    background-color: $colorAlabaster;
     height: 100%;
 }
 
@@ -36,15 +35,19 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 380px;
+    // max-width: 380px;
     width: 100%;
     min-height: 100%;
 }
+
 
 .main {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
     gap: 10px;
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
 }
 </style>

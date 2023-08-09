@@ -1,23 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MainPage from 'Pages/MainPage.vue'
-import QuestionsPage from 'Pages/QuestionsPage.vue'
+import FormPage from 'Pages/FormPage.vue'
+import PreviewPage from 'Pages/PreviewPage.vue'
+
 
 const routes = [
     {
         path: '/',
-        component: MainPage,
+        component: FormPage,
         name: 'main'
     },
     {
-        path: '/questions',
-        component: QuestionsPage,
-        name: 'questions'
+        path: '/preview',
+        component: PreviewPage,
+        name: 'preview'
     },
     {
         path: '/:pathMatch(.*)*',
         redirect: { name: 'main' }
     },
-
 ]
 
 const router = createRouter({
